@@ -8,7 +8,7 @@ public class HashMapRunner {
 	static Scanner sc = new Scanner(System.in);
 	public void findFrequency() {
 	
-	String message = "To be or not to be";
+	String message = " Paranoid are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
 	String[] messagearray = message.toLowerCase().split(" ");
 	for (String word : messagearray) {
 	Integer value = myHashMap.get(word);
