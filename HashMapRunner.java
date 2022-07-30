@@ -4,7 +4,8 @@ import java.util.Map;
 import java.util.Scanner;
 	
 public class HashMapRunner {
-	static MyHashMap<String, Integer> myHashMap = new MyHashMap<>();
+	
+	 MyHashMap<String, Integer> myHashMap = new MyHashMap<>();
 	static Scanner sc = new Scanner(System.in);
 	public void findFrequency() {
 	
@@ -19,14 +20,17 @@ public class HashMapRunner {
 	value++;
 	}
 	myHashMap.add(word, value);
+	
 	}
+	myHashMap.remove("avoidable");
 	System.out.println(myHashMap);
 	}
 	
 	public static void main(String[] args) {
 	
 	HashMapRunner hash = new HashMapRunner();
+	hash.findFrequency();
 	
-	hash.findFrequency(); 
+	hash.myHashMap.remove(null);
 	}
 	}

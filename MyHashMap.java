@@ -51,9 +51,7 @@ public class MyHashMap<K, V> {
 			}
 			
 			}
-			/*
-			* Get the values by using key index
-			*/
+			
 			public V get(K key) {
 			int index = getKeyIndex(key);
 			MyHashNode<K, V> head = sizeOfBucket.get(index);
@@ -65,9 +63,7 @@ public class MyHashMap<K, V> {
 			}
 			return null;
 			}
-			/*
-			* Serching the node using keys
-			*/
+			
 			public MyHashNode<K, V> searchNode(K key) {
 			MyHashNode node = head;
 			int countposition = 0;
@@ -80,21 +76,17 @@ public class MyHashMap<K, V> {
 			}
 			return node;
 			}
-			/*
-			* Get the values by using index using hashcode() method
-			*/
+			
 			public int getKeyIndex(K word) {
-			// System.out.println(word);
+			
 			int hashcode = Math.abs(word.hashCode());
-			// System.out.println(hashcode);
-			int index = hashcode % numOfBuckets; // fixing the index for one word
+			
+			int index = hashcode % numOfBuckets; 
 			
 			return index;
 			
 			}
-			/*
-			* Removing the value
-			*/
+			
 			public void remove(K word) {
 			MyHashNode currentNode = head;
 			MyHashNode previousNode = null;
